@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crunchyroll Reddit Comments",
+  "description": "Display Reddit comments on crunchyroll",
+  "version": "1.0",
+
+  "content_scripts": [
+      {
+          "matches": [
+            "*://*.crunchyroll.com/*"
+          ],
+          "js": ["js/vendor.js", "js/content_script.js"]
+      }
+  ],
+
+  "permissions": [
+    "storage",
+    "<all_urls>"
+  ]
+}
