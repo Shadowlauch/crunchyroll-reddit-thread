@@ -4,7 +4,9 @@
   "name": "Crunchyroll Reddit Comments",
   "description": "Display Reddit comments on crunchyroll",
   "version": "1.0",
-
+  "background": {
+    "scripts": ["js/vendor.js", "js/background.js"]
+  },
   "content_scripts": [
       {
           "matches": [
@@ -15,6 +17,7 @@
   ],
 
   "permissions": [
+    "cookies",
     "storage",
     "<all_urls>"
   ]
